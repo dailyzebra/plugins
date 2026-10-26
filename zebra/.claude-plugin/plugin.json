@@ -1,0 +1,7 @@
+{
+  "name": "zebra",
+  "version": "0.1.0",
+  "description": "High performance, without carrying it all in your head. Zebra keeps the memory, Claude does the work.",
+  "author": { "name": "Daily Zebra", "url": "https://dailyzebra.com" },
+  "homepage": "https://dailyzebra.com"
+}

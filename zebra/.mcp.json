@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "zebra": { "type": "http", "url": "https://mcp.dailyzebra.com/mcp" }
+  }
+}

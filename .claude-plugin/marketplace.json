@@ -1,0 +1,17 @@
+{
+  "name": "dailyzebra",
+  "owner": {
+    "name": "Daily Zebra",
+    "url": "https://dailyzebra.com"
+  },
+  "metadata": {
+    "description": "Plugins from Daily Zebra."
+  },
+  "plugins": [
+    {
+      "name": "zebra",
+      "source": "./zebra",
+      "description": "Your day and your promises inside every Claude session: today's top task at the start, promises captured as you work, tasks closed when the pull request merges."
+    }
+  ]
+}
