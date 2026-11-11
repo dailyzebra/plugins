@@ -3,7 +3,7 @@
     "SessionStart": [
       {
         "matcher": "startup|clear",
-        "hooks": [{ "type": "command", "command": "echo 'Before your first answer in this session, call the Zebra tool today. If planned is true, keep the top task, the next tasks and the promises due in mind, and tell the person in one line when what they ask is off their plan for today. If planned is false, say once that the morning routine has not run today.'" }]
+        "hooks": [{ "type": "command", "command": "echo 'Before your first answer in this session, call the Zebra tool routine with session and follow the script it returns.'" }]
       }
     ],
     "PostToolUse": [
