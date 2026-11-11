@@ -3,10 +3,19 @@
   "name": "zebra",
   "version": "0.1.0",
   "description": "Zebra keeps your promises and helps you pick your day: one delivery, up to five tasks, and every promise accounted for.",
-  "author": { "name": "Daily Zebra", "url": "https://dailyzebra.com" },
+  "author": {
+    "name": "Daily Zebra",
+    "url": "https://dailyzebra.com"
+  },
   "homepage": "https://dailyzebra.com",
   "repository": "https://github.com/dailyzebra/plugins",
-  "keywords": ["productivity", "planning", "promises", "tasks", "meetings"],
+  "keywords": [
+    "productivity",
+    "planning",
+    "promises",
+    "tasks",
+    "meetings"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -17,9 +26,14 @@
         "category": "Productivity",
         "capabilities": [],
         "websiteURL": "https://dailyzebra.com",
+        "supportURL": "https://dailyzebra.com/support/",
         "privacyPolicyURL": "https://dailyzebra.com/privacy/",
         "termsOfServiceURL": "https://dailyzebra.com/terms/",
-        "defaultPrompt": ["Prepare my day with Zebra", "Capture today's promises with Zebra", "Summarize my week with Zebra"],
+        "defaultPrompt": [
+          "Prepare my day with Zebra",
+          "Capture today's promises with Zebra",
+          "Summarize my week with Zebra"
+        ],
         "brandColor": "#0B0B0C",
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/logo.png"
