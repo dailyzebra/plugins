@@ -1,0 +1,12 @@
+{
+  "name": "dailyzebra",
+  "interface": { "displayName": "Daily Zebra" },
+  "plugins": [
+    {
+      "name": "zebra",
+      "source": { "source": "local", "path": "./openai/zebra" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
