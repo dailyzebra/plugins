@@ -65,6 +65,59 @@
             "description": "Zebra garde la mémoire de votre travail pour que votre assistant planifie votre journée.\n\n• Matin : vérifie ce qui est déjà terminé dans les outils où vous travaillez, et choisit une livraison et jusqu'à cinq tâches pour la journée.\n• Soir : lit les réunions et les conversations du jour, enregistre ce que vous avez promis et ce qu'on vous a promis, avec la phrase exacte, et crée les tâches.\n• Semaine : ce que vous avez tenu, ce qui reste ouvert des deux côtés, et de nouvelles lignes pour votre brag document.\n• Les promesses ouvertes depuis plus d'une semaine reviennent pour que vous les gardiez, les clôturiez ou les annuliez.\n\nZebra ne lit ni vos e-mails, ni votre agenda, ni vos notes, ni votre gestionnaire de tâches. Votre assistant le fait via les apps que vous avez déjà connectées, et Zebra garde vos promesses, vos règles et votre plan. Conçu pour les contributeurs individuels qui jonglent avec de nombreux engagements."
           }
         }
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Read today's plan",
+              "prompt": "What is on my plan for today in Zebra?",
+              "tools_triggered": "today",
+              "expected_behavior": "Shows the day card with the top task, the next tasks with their reasons and the promises due today."
+            },
+            {
+              "description": "List open promises",
+              "prompt": "Which promises do I have open in Zebra?",
+              "tools_triggered": "promises",
+              "expected_behavior": "Lists what Alex owes, such as sharing the pricing RFC draft with Maya, and what is owed to Alex, each with the quote that proves it."
+            },
+            {
+              "description": "Record promises from a transcript",
+              "prompt": "Record the promises from this meeting in Zebra: Alex: I'll send the vendor contract to Priya by Friday. Priya: I'll review the security checklist tomorrow.",
+              "tools_triggered": "digest, record",
+              "expected_behavior": "Stores one promise from Alex and one from Priya, each with the exact quote, and returns a task to create for Alex's promise."
+            },
+            {
+              "description": "Close a promise",
+              "prompt": "In Zebra, close the promise about the INC-212 postmortem, it was published.",
+              "tools_triggered": "promises, resolve",
+              "expected_behavior": "Finds the promise, asks for confirmation, then closes it as done; it leaves the open list."
+            },
+            {
+              "description": "Weekly summary",
+              "prompt": "Summarize my week with Zebra.",
+              "tools_triggered": "routine, week",
+              "expected_behavior": "Shows promises kept, what is still open on both sides and the days planned this week."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Reading email",
+              "prompt": "What is in my inbox today?"
+            },
+            {
+              "description": "Deleting the account",
+              "prompt": "Delete everything Zebra has about me."
+            },
+            {
+              "description": "Booking a meeting",
+              "prompt": "Book a meeting with Maya tomorrow at 10."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Zebra does not sell products or process payments in the conversation.",
+        "demo_recording_url": "https://youtu.be/AvpXoetR5Vw"
       }
     }
   }
