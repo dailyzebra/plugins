@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "zebra",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Zebra keeps your promises and helps you pick your day: one delivery, up to five tasks, and every promise accounted for.",
   "author": {
     "name": "Daily Zebra",
@@ -24,7 +24,13 @@
         "longDescription": "Zebra keeps the memory of your work so your assistant can plan your day.\n\n• Morning: checks what is already finished in the tools you work in, and picks one delivery and up to five tasks for the day.\n• Evening: reads today's meetings and chats, records what you promised and what was promised to you, with the exact quote, and creates the tasks.\n• Weekly: what you kept, what is still open on both sides, and new lines for your brag document.\n• Promises open for over a week come back so you can keep, close or cancel them.\n\nZebra does not read your email, calendar, notes or task manager. Your assistant does that through the apps you already connected, and Zebra stores your promises, rules and plan. Built for individual contributors who juggle many commitments.",
         "developerName": "Daily Zebra",
         "category": "Productivity",
-        "capabilities": [],
+        "capabilities": [
+          "Plan your day",
+          "Capture promises from meetings and chats",
+          "Track promises in both directions",
+          "Summarize your week",
+          "Update your brag document"
+        ],
         "websiteURL": "https://dailyzebra.com",
         "supportURL": "https://dailyzebra.com/support/",
         "privacyPolicyURL": "https://dailyzebra.com/privacy/",
