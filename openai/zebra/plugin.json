@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "zebra",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Zebra keeps your promises and helps you pick your day: one delivery, up to five tasks, and every promise accounted for.",
   "author": {
     "name": "Daily Zebra",
@@ -44,7 +44,28 @@
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/logo.png"
       },
-      "onboardingSkill": "./skills/get-started/SKILL.md"
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "publication": {
+        "countries": [],
+        "translations": {
+          "pt-BR": {
+            "subtitle": "Seu dia e suas promessas",
+            "description": "O Zebra guarda a memória do seu trabalho para que seu assistente planeje seu dia.\n\n• Manhã: confere o que já foi concluído nas ferramentas em que você trabalha e escolhe uma entrega e até cinco tarefas para o dia.\n• Fim do dia: lê as reuniões e conversas de hoje, registra o que você prometeu e o que prometeram a você, com a fala exata, e cria as tarefas.\n• Semana: o que você cumpriu, o que segue aberto dos dois lados e novas linhas para o seu brag document.\n• Promessas abertas há mais de uma semana voltam para você manter, fechar ou cancelar.\n\nO Zebra não lê seu e-mail, agenda, notas nem gerenciador de tarefas. Seu assistente faz isso pelos apps que você já conectou, e o Zebra guarda suas promessas, regras e plano. Feito para quem trabalha como contribuidor individual e lida com muitos compromissos."
+          },
+          "pt-PT": {
+            "subtitle": "O teu dia e as tuas promessas",
+            "description": "O Zebra guarda a memória do teu trabalho para que o teu assistente planeie o teu dia.\n\n• Manhã: verifica o que já está concluído nas ferramentas em que trabalhas e escolhe uma entrega e até cinco tarefas para o dia.\n• Fim do dia: lê as reuniões e conversas de hoje, regista o que prometeste e o que te prometeram, com as palavras exatas, e cria as tarefas.\n• Semana: o que cumpriste, o que continua em aberto dos dois lados e novas linhas para o teu brag document.\n• Promessas em aberto há mais de uma semana voltam para as manteres, fechares ou cancelares.\n\nO Zebra não lê o teu e-mail, calendário, notas nem gestor de tarefas. O teu assistente faz isso através das apps que já ligaste, e o Zebra guarda as tuas promessas, regras e plano. Feito para contribuidores individuais com muitos compromissos."
+          },
+          "es-ES": {
+            "subtitle": "Tu día y tus promesas",
+            "description": "Zebra guarda la memoria de tu trabajo para que tu asistente planifique tu día.\n\n• Mañana: revisa lo que ya está terminado en las herramientas en las que trabajas y elige una entrega y hasta cinco tareas para el día.\n• Fin del día: lee las reuniones y chats de hoy, registra lo que prometiste y lo que te prometieron, con la frase exacta, y crea las tareas.\n• Semana: lo que cumpliste, lo que sigue abierto por ambos lados y nuevas líneas para tu brag document.\n• Las promesas abiertas hace más de una semana vuelven para que las mantengas, cierres o canceles.\n\nZebra no lee tu correo, calendario, notas ni gestor de tareas. Tu asistente lo hace con las apps que ya conectaste, y Zebra guarda tus promesas, reglas y plan. Pensado para contribuidores individuales con muchos compromisos."
+          },
+          "fr-FR": {
+            "subtitle": "Votre journée et vos promesses",
+            "description": "Zebra garde la mémoire de votre travail pour que votre assistant planifie votre journée.\n\n• Matin : vérifie ce qui est déjà terminé dans les outils où vous travaillez, et choisit une livraison et jusqu'à cinq tâches pour la journée.\n• Soir : lit les réunions et les conversations du jour, enregistre ce que vous avez promis et ce qu'on vous a promis, avec la phrase exacte, et crée les tâches.\n• Semaine : ce que vous avez tenu, ce qui reste ouvert des deux côtés, et de nouvelles lignes pour votre brag document.\n• Les promesses ouvertes depuis plus d'une semaine reviennent pour que vous les gardiez, les clôturiez ou les annuliez.\n\nZebra ne lit ni vos e-mails, ni votre agenda, ni vos notes, ni votre gestionnaire de tâches. Votre assistant le fait via les apps que vous avez déjà connectées, et Zebra garde vos promesses, vos règles et votre plan. Conçu pour les contributeurs individuels qui jonglent avec de nombreux engagements."
+          }
+        }
+      }
     }
   }
 }
