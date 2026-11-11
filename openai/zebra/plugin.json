@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "zebra",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Zebra keeps your promises and helps you pick your day: one delivery, up to five tasks, and every promise accounted for.",
   "author": {
     "name": "Daily Zebra",
